@@ -1,0 +1,128 @@
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<head>
+  <link href="stile.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div >
+    <h1 style="color:white;" align="center">game's war</h1>
+</div>
+  </head>
+  <body onload="parti()" >
+    <div style="border-style: solid ;margin-top:40px;background-color: #5f0e67;border-color:#5f0e67;margin-left:30px;margin-right:30px">
+<p style="color:white;margin-top:10px; margin-left:20px; margin-right:20px; text-align:center">
+In questo sito è possibile votare il proprio gioco preferito per farlo arrivare in finale e vincere.
+  </p>
+  </div>
+<div class="row"style="margin-top:50px;">
+  <div class=" col-lg-1  col-md-1 col-sm-1" style="  width:100% ;height:20px ">
+
+  </div>
+<div class=" col-lg-4 col-md-4 col-sm-4" style=" ;width:100% ;border-width:5px;border-style:solid; border-color:#5f0e67;padding-right:0px;padding-left:0px  ">
+<img src="Games_Subnav_Minecraft-300x465.jpg" style="min-width:100%; max-width:401px; max-height:563.56px; "></img>
+
+  </div>
+
+
+  <div class=" col-lg-2 col-md-2 col-sm-2" style="  width:100% ;height:20px ">
+
+  </div>
+
+
+  <div class=" col-lg-4 col-md-4 col-sm-4" style=" ;width:100% ;border-width:5px;border-style:solid; border-color:#5f0e67;padding-right:0px;padding-left:0px  ">
+    <img src="51rTJhvPtwL._AC_.jpg" style="width:100%; height:100%"></img>
+
+    </div>
+
+
+    <div class=" col-lg-1  col-md-1 col-sm-1" style="  width:100% ;height:20px ">
+    </div>
+
+</div>
+
+<div class="row"style="margin-top:50px;">
+  <div class=" col-lg-1  col-md-1 col-sm-1" style="  width:100% ;height:20px ">
+
+  </div>
+<div class=" col-lg-4 col-md-4 col-sm-4" style=" ;width:100% ;padding-right:0px;padding-left:0px  ">
+  <label id="lblpt2" style=";color:white;margin-left:47%;"> saddas</label></br>
+<input type="button"  style="margin-left:41%; margin-top:5%; width:80px" value="vote" onclick="counter2()"></input>
+
+  </div>
+
+
+  <div class=" col-lg-2 col-md-2 col-sm-2" style="  width:100% ;height:20px ">
+  </div>
+
+
+  <div class=" col-lg-4 col-md-4 col-sm-4" style=" ;width:100% ;padding-right:0px;padding-left:0px  ">
+      <label id="lblpt" style=";color:white;margin-left:47%;"> saddas</label></br>
+    <input type="button"  style="margin-left:41%; margin-top:5%; width:80px" value="vote" onclick="counter1()"></input>
+
+    </div>
+
+
+    <div class=" col-lg-1  col-md-1 col-sm-1" style="  width:100% ;height:20px ">
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+  var x = 0;
+
+  var y = 0;
+  var z = 0;
+  var f = 0;
+var h = 0;
+    function parti(){
+
+      window.prompt('LOGIN','nome e cognome');
+
+  }
+
+  function counter1(){
+
+  x = x + 1;
+
+  z= x + y;
+  f = x * 100 / z ;
+  h = y * 100 / z ;
+  var arr1 = Math.round(f);
+  var arr2 = Math.round(h);
+  document.getElementById("lblpt").innerHTML = arr1 + "%";
+  document.getElementById("lblpt2").innerHTML = arr2 + "%";
+}
+function counter2(){
+
+y = y + 1;
+z= x + y;
+h = y * 100 / z ;
+f = x * 100 / z ;
+var arr1 = Math.round(f);
+var arr2 = Math.round(h);
+document.getElementById("lblpt2").innerHTML = arr1 + "%";
+document.getElementById("lblpt").innerHTML = arr2  + "%";
+
+}
+    </script>
+
+    </body>
+
+
+  </html>
